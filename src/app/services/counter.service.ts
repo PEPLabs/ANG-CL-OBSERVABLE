@@ -15,6 +15,7 @@ export class CounterService {
   getCounterSeconds():Observable<number>{
     return interval(1000).pipe(take(10+1));
   }
+  
   /**
    * the interval method returns an observable after some time, which is a way to send data asynchronously over our app.
    * we want to do this 1000+1 times.
